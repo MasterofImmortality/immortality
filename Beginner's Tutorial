@@ -1,8 +1,7 @@
 import random
+duanziyang = random.randint(1, 100)
 
-secret_number = random.randint(1, 100)
-
-attempts = 0
+guankexuan = 0
 
 print("欢迎来到猜数字游戏！")
 print("我想了一个 1 到 100 之间的数字，你来猜猜看。")
@@ -11,10 +10,10 @@ while True:
     guess = int(input("请输入你的猜测："))
     attempts += 1
 
-    if guess < secret_number:
+    if guess < duanziyang:
         print("你的猜测小了。")
-    elif guess > secret_number:
+    elif guess > duanziyang:
         print("你的猜测大了。")
     else:
-        print(f"恭喜你猜对了！这个数字是{secret_number}。你用了{attempts}次尝试。")
+        print(f"恭喜你猜对了！这个数字是{duanziyang}。你用了{guankexuan}次尝试。")
         break
